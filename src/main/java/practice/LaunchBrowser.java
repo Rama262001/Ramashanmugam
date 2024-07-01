@@ -23,7 +23,7 @@ public class LaunchBrowser {
 		driver.findElement(By.id("sum2")).sendKeys("30");
 		driver.findElement(By.xpath("//button[text()='Get Sum']")).click();
 		String text = driver.findElement(By.id("addmessage")).getText();
-		System.out.println("Result: "+text);
+		System.out.println("The provided result is: "+text);
 		driver.close();
 	}
 
