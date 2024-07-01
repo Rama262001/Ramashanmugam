@@ -60,7 +60,7 @@ public class AddingCart {
 		driver.findElement(By.xpath("//button[@title='Place Order']")).click();
 		Thread.sleep(7000);
 		String orderno = driver.findElement(By.xpath("//div[@class='checkout-success']//p//span")).getText();
-		System.out.println("your order Id is:"+orderno);
+		System.out.println("your order Id:"+orderno);
         driver.quit();
 	}
 	
